@@ -69,7 +69,7 @@ Each card includes project title, summary, and GitHub link.
 - Tailwind CSS  
 - Font Awesome (Icons)  
 - Google Fonts: *Inter*, *JetBrains Mono*
--Ai : cursor.ai
+-**Ai : cursor.ai**
 ---
 
 ## 🎨 Design System
