@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suraj Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              montserrat: ["Montserrat", "sans-serif"],
+              bungee: ["Bungee", "cursive"],
+              cinzel: ["Cinzel", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-montserrat scroll-smooth bg-gray-100 shadow-2xl">
+    <nav
+      class="navbar fixed top-0 w-full z-50 border-b border-gray-200 animate-slide-down"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex-shrink-0">
+            <h1
+              class="text-4xl font-bold text-gradient font-bungee tracking-widest"
+            >
+              Suraj
+            </h1>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-5">
+              <a
+                href="#home"
+                class="nav-link text-black hover:text-purple-600 px-3 py-2 rounded-md text-lg font-medium transition-colors tracking-wide"
+                >Home</a
+              >
+              <a
+                href="#about"
+                class="nav-link text-black hover:text-purple-600 px-3 py-2 rounded-md text-lg font-medium transition-colors tracking-wide"
+                >About</a
+              >
+
+              <a
+                href="#skills"
+                class="nav-link text-black hover:text-purple-600 px-3 py-2 rounded-md text-lg font-medium transition-colors tracking-wide"
+                >Skills</a
+              >
+              <a
+                href="#certificates"
+                class="nav-link text-black hover:text-purple-600 px-3 py-2 rounded-md text-lg font-medium transition-colors tracking-wide"
+                >Certificates</a
+              >
+              <a
+                href="#projects"
+                class="nav-link text-black hover:text-purple-600 px-3 py-2 rounded-md text-lg font-medium transition-colors tracking-wide"
+                >Projects</a
+              >
+              <a
+                href="#contact"
+                class="nav-link text-black hover:text-purple-600 px-3 py-2 rounded-md text-lg font-medium transition-colors tracking-wide"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <div class="md:hidden">
+            <button class="mobile-menu-button text-black hover:text-purple-600">
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      id="home"
+      class="premium-skills-bg min-h-screen flex items-center justify-center pt-16 relative overflow-hidden"
+    >
+      <div class="absolute inset-0">
+        <div
+          class="absolute top-20 left-20 w-20 h-20 bg-purple-500/20 rounded-full animate-bounce-slow"
+        ></div>
+        <div
+          class="absolute top-40 right-32 w-16 h-16 bg-pink-500/20 rounded-full animate-pulse-slow"
+        ></div>
+        <div
+          class="absolute bottom-32 left-32 w-24 h-24 bg-blue-500/20 rounded-full animate-spin-slow"
+        ></div>
+        <div
+          class="absolute bottom-20 right-20 w-12 h-12 bg-yellow-500/20 rounded-full animate-bounce-slow"
+        ></div>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10"
+      >
+        <div class="animate-fade-in">
+          <div class="mb-8">
+            <div class="w-64 h-64 mx-auto mb-8 relative group">
+              <div
+                class="absolute -inset-4 w-72 h-72 rounded-full border-2 border-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 animate-spin-slow"
+              ></div>
+
+              <div
+                class="absolute -inset-2 w-68 h-68 rounded-full border-2 border-white/30 animate-spin-slow-reverse"
+              ></div>
+
+              <div
+                class="w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl animate-float-enhanced animate-pulse-slow relative z-10"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 animate-pulse-slow"
+                ></div>
+                <img
+                  src="./Profile.png"
+                  alt="Suraj - Web Developer"
+                  class="w-full h-full object-cover relative z-10 group-hover:scale-110 transition-transform duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-br from-purple-600/30 to-pink-600/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute -inset-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-xl opacity-20 animate-pulse-slow"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <h1
+            class="hero-title font-bungee text-white mb-4 tracking-wide animate-bounce-in group"
+          >
+            Hi, I'm
+            <span
+              class="text-yellow-300 tracking-wide animate-glow hover:text-yellow-200 transition-colors duration-300 cursor-pointer"
+              >Suraj</span
+            >
+          </h1>
+          <p
+            class="text-xl md:text-2xl text-white mb-8 opacity-90 animate-slide-up-delay hover:text-purple-200 transition-colors duration-300"
+          >
+            Computer Science Student
+          </p>
+          <p
+            class="text-lg text-white mb-12 opacity-80 max-w-3xl mx-auto animate-slide-up-delay-2 hover:opacity-100 transition-opacity duration-300"
+          >
+            Passionate about creating beautiful, responsive, and user-friendly
+            web experiences. Specializing in modern web technologies and clean
+            code.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up-delay-3"
+          >
+            <a
+              href="#projects"
+              class="premium-btn-primary bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold transition-all duration-300 relative overflow-hidden group hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50"
+            >
+              <span
+                class="relative z-10 group-hover:text-white transition-colors duration-300"
+                >View My Work</span
+              >
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+              <div
+                class="absolute inset-0 border-2 border-purple-300 rounded-lg group-hover:border-purple-400 transition-colors duration-300"
+              ></div>
+              <div
+                class="absolute -inset-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg blur opacity-0 group-hover:opacity-50 transition-opacity duration-300"
+              ></div>
+            </a>
+            <a
+              href="#contact"
+              class="premium-btn-secondary border-2 border-white text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 relative overflow-hidden group hover:scale-105 hover:shadow-2xl hover:shadow-white/50"
+            >
+              <span
+                class="relative z-10 group-hover:text-purple-600 transition-colors duration-300"
+                >Get In Touch</span
+              >
+              <div
+                class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+              <div
+                class="absolute inset-0 border-2 border-purple-300 rounded-lg group-hover:border-purple-400 transition-colors duration-300"
+              ></div>
+              <div
+                class="absolute -inset-1 bg-gradient-to-r from-white to-gray-200 rounded-lg blur opacity-0 group-hover:opacity-50 transition-opacity duration-300"
+              ></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate-slide-up">
+          <h2
+            class="section-title text-4xl font-bold text-gray-900 mb-4 font-bungee animate-bounce-in"
+          >
+            About Me
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto animate-pulse-slow"
+          ></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="animate-slide-up">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6 font-cinzel">
+              Coding Journey
+            </h3>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              My coding journey began over 5 years ago with a deep curiosity for
+              how websites work. Starting from HTML and CSS, I gradually
+              explored JavaScript, jQuery, and eventually powerful tools like
+              Bootstrap, Tailwind CSS, and React.js.<br />
+              <br />Over the years, I’ve built everything from simple layouts to
+              full-featured projects like an E-commerce website (UrbanStyle) and
+              a Restaurant & Menu Management System. With every project, I’ve
+              grown not just as a developer, but as a problem-solver passionate
+              about creating clean, responsive, and user-friendly web
+              experiences.
+            </p>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              My journey in web development started with HTML and CSS, and has
+              evolved to include modern frameworks and technologies. I believe
+              in writing clean, maintainable code and staying up-to-date with
+              the latest trends.
+            </p>
+          </div>
+
+          <div class="glassmorphism rounded-2xl p-8 animate-slide-up">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6 font-cinzel">
+              Education & Goals
+            </h3>
+
+            <div class="mb-6 animate-fade-in-delay">
+              <h4
+                class="text-lg font-semibold text-purple-600 mb-2 flex items-center"
+              >
+                <i class="fas fa-graduation-cap mr-2"></i>Education
+              </h4>
+              <p class="text-gray-600">B.Sc. in Computer Science</p>
+              <p class="text-purple-600 font-bold text-md">CGPA: 8.60</p>
+            </div>
+
+            <div class="mb-6 animate-fade-in-delay-2">
+              <h4
+                class="text-lg font-semibold text-purple-600 mb-2 flex items-center"
+              >
+                <i class="fas fa-rocket mr-2"></i>Short-term Goal
+              </h4>
+              <p class="text-gray-600">
+                My short-term goal is to secure a developer role in a reputed
+                company where I can apply my technical skills, gain real-world
+                experience, and continue learning new technologies to grow
+                professionally.
+              </p>
+            </div>
+
+            <div class="animate-fade-in-delay-3">
+              <h4
+                class="text-lg font-semibold text-purple-600 mb-2 flex items-center"
+              >
+                <i class="fas fa-star mr-2"></i>Long-term Goal
+              </h4>
+              <p class="text-gray-600">
+                Become an expert Java Full Stack Developer, leading development
+                teams and architecting enterprise-level solutions. Establish
+                myself as a thought leader in the Java ecosystem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-20 premium-skills-bg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate-slide-up">
+          <h2
+            class="section-title text-4xl font-bold text-white mb-4 font-bungee animate-bounce-in"
+          >
+            Skills & Technologies
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto animate-pulse-slow"
+          ></div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+          <div
+            class="premium-skill-card text-center p-8 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-2xl hover:shadow-purple-500/25 border border-gray-700 hover:border-purple-500 transition-all duration-300 group"
+          >
+            <i
+              class="fab fa-html5 text-7xl text-orange-500 mb-6 group-hover:scale-110 transition-transform duration-300"
+            ></i>
+            <h3 class="font-semibold text-white font-cinzel text-lg">HTML5</h3>
+          </div>
+
+          <div
+            class="premium-skill-card text-center p-8 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-2xl hover:shadow-blue-500/25 border border-gray-700 hover:border-blue-500 transition-all duration-300 group"
+          >
+            <i
+              class="fab fa-css3-alt text-7xl text-blue-500 mb-6 group-hover:scale-110 transition-transform duration-300"
+            ></i>
+            <h3 class="font-semibold text-white font-cinzel text-lg">CSS3</h3>
+          </div>
+
+          <div
+            class="premium-skill-card text-center p-8 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-2xl hover:shadow-yellow-500/25 border border-gray-700 hover:border-yellow-500 transition-all duration-300 group"
+          >
+            <i
+              class="fab fa-js-square text-7xl text-yellow-500 mb-6 group-hover:scale-110 transition-transform duration-300"
+            ></i>
+            <h3 class="font-semibold text-white font-cinzel text-lg">
+              JavaScript
+            </h3>
+          </div>
+
+          <div
+            class="premium-skill-card text-center p-8 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-2xl hover:shadow-purple-500/25 border border-gray-700 hover:border-purple-500 transition-all duration-300 group"
+          >
+            <i
+              class="fab fa-bootstrap text-7xl text-purple-500 mb-6 group-hover:scale-110 transition-transform duration-300"
+            ></i>
+            <h3 class="font-semibold text-white font-cinzel text-lg">
+              Bootstrap
+            </h3>
+          </div>
+
+          <div
+            class="premium-skill-card text-center p-8 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-2xl hover:shadow-blue-400/25 border border-gray-700 hover:border-blue-400 transition-all duration-300 group"
+          >
+            <i
+              class="fab fa-react text-7xl text-blue-400 mb-6 group-hover:scale-110 transition-transform duration-300"
+            ></i>
+            <h3 class="font-semibold text-white font-cinzel text-lg">
+              React.js
+            </h3>
+          </div>
+
+          <div
+            class="premium-skill-card text-center p-8 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-2xl hover:shadow-red-500/25 border border-gray-700 hover:border-red-500 transition-all duration-300 group"
+          >
+            <i
+              class="fab fa-java text-7xl text-red-500 mb-6 group-hover:scale-110 transition-transform duration-300"
+            ></i>
+            <h3 class="font-semibold text-white font-cinzel text-lg">
+              Core Java
+            </h3>
+          </div>
+
+          <div
+            class="premium-skill-card text-center p-8 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-2xl hover:shadow-blue-600/25 border border-gray-700 hover:border-blue-600 transition-all duration-300 group"
+          >
+            <i
+              class="fas fa-database text-7xl text-blue-600 mb-6 group-hover:scale-110 transition-transform duration-300"
+            ></i>
+            <h3 class="font-semibold text-white font-cinzel text-lg">MySQL</h3>
+          </div>
+
+          <div
+            class="premium-skill-card text-center p-8 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-2xl hover:shadow-green-500/25 border border-gray-700 hover:border-green-500 transition-all duration-300 group"
+          >
+            <i
+              class="fab fa-node-js text-7xl text-green-500 mb-6 group-hover:scale-110 transition-transform duration-300"
+            ></i>
+            <h3 class="font-semibold text-white font-cinzel text-lg">jQuery</h3>
+          </div>
+
+          <div
+            class="premium-skill-card text-center p-8 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-2xl hover:shadow-cyan-500/25 border border-gray-700 hover:border-cyan-500 transition-all duration-300 group"
+          >
+            <i
+              class="fas fa-wind text-7xl text-cyan-500 mb-6 group-hover:scale-110 transition-transform duration-300"
+            ></i>
+            <h3 class="font-semibold text-white font-cinzel text-lg">
+              Tailwind CSS
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate-slide-up">
+          <h2
+            class="section-title text-4xl font-bold text-gray-900 mb-4 font-bungee animate-bounce-in"
+          >
+            Featured Projects
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto animate-pulse-slow"
+          ></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="premium-project-card bg-white rounded-3xl shadow-lg overflow-hidden group"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center relative overflow-hidden rounded-t-3xl"
+            >
+              <i
+                class="fas fa-utensils text-6xl text-white group-hover:scale-110 transition-transform duration-300"
+              ></i>
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold text-gray-900 mb-3 font-cinzel group-hover:text-purple-600 transition-colors duration-300"
+              >
+                Restaurant & Menu Management System
+              </h3>
+              <p class="text-gray-600 mb-4">
+                A responsive web-based application that allows users to browse
+                restaurants, view their menus, add dishes to a cart, and place
+                orders. The system supports user registration, login, and
+                cash-on-delivery payment.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm"
+                  >HTML5</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm"
+                  >PHP</span
+                >
+                <span
+                  class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm"
+                  >CSS</span
+                >
+                <span
+                  class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-sm"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm"
+                  >Mysql</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                  >jQuery</span
+                >
+              </div>
+              <a
+                href="https://github.com/Suraj-7874/Restaurant-Menu-System"
+                class="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold group-hover:translate-x-1 transition-transform duration-300"
+              >
+                <i class="fab fa-github mr-2"></i>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="premium-project-card bg-white rounded-3xl shadow-lg overflow-hidden group"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center relative overflow-hidden rounded-t-3xl"
+            >
+              <i
+                class="fas fa-calculator text-6xl text-white group-hover:scale-110 transition-transform duration-300"
+              ></i>
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold text-gray-900 mb-3 font-cinzel group-hover:text-purple-600 transition-colors duration-300"
+              >
+                Tailwind Calculator
+              </h3>
+              <p class="text-gray-600 mb-20">
+                Sound effect when you click a button . Theme toggle between dark
+                and light display. Local history of last few calculations.
+                Responsive design that adapts to all screen sizes.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-cyan-100 text-cyan-600 rounded-full text-sm"
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-sm"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm"
+                  >HTML5</span
+                >
+              </div>
+              <a
+                href="https://github.com/Suraj-7874/Tailwind-Simple-Calculator"
+                class="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold group-hover:translate-x-1 transition-transform duration-300"
+              >
+                <i class="fab fa-github mr-2"></i>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="premium-project-card bg-white rounded-3xl shadow-lg overflow-hidden group"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-pink-400 to-red-500 flex items-center justify-center relative overflow-hidden rounded-t-3xl"
+            >
+              <i
+                class="fas fa-shopping-bag text-6xl text-white group-hover:scale-110 transition-transform duration-300"
+              ></i>
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold text-gray-900 mb-3 font-cinzel group-hover:text-purple-600 transition-colors duration-300"
+              >
+                UrbanStyle E-Commerce Website
+              </h3>
+              <p class="text-gray-600 mb-20">
+                A modern, responsive React e-commerce web app for fashion and
+                lifestyle products. Built with Tailwind CSS, React Router, and
+                DummyJSON API..
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                  >React</span
+                >
+                <span
+                  class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm"
+                  >tailwind-css</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm"
+                  >html5</span
+                >
+              </div>
+              <a
+                href="https://github.com/Suraj-7874/UrbanStyle"
+                class="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold group-hover:translate-x-1 transition-transform duration-300"
+              >
+                <i class="fab fa-github mr-2"></i>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="certificates" class="py-20 premium-skills-bg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate-slide-up">
+          <h2
+            class="section-title text-4xl font-bold text-white mb-4 font-bungee animate-bounce-in"
+          >
+            Certificates & Achievements
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto animate-pulse-slow"
+          ></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="premium-certificate-card bg-white rounded-3xl shadow-lg overflow-hidden group"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center relative overflow-hidden rounded-t-3xl"
+            >
+              <i
+                class="fas fa-certificate text-6xl text-white group-hover:scale-110 transition-transform duration-300"
+              ></i>
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold text-gray-900 mb-3 font-cinzel group-hover:text-purple-600 transition-colors duration-300"
+              >
+                Responsive Web Design
+              </h3>
+              <p class="text-gray-600 mb-4">
+                FreeCodeCamp certification for mastering responsive web design
+                principles and modern CSS techniques.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                  >HTML5</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm"
+                  >CSS3</span
+                >
+                <span
+                  class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm"
+                  >Responsive Design</span
+                >
+              </div>
+              <a
+                href="Cartificates/Responsive_Web_Design.PNG"
+                target="_blank"
+                class="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold group-hover:translate-x-1 transition-transform duration-300"
+              >
+                <i class="fas fa-eye mr-2"></i>
+                View Certificate
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="premium-certificate-card bg-white rounded-3xl shadow-lg overflow-hidden group"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center relative overflow-hidden rounded-t-3xl"
+            >
+              <i
+                class="fas fa-certificate text-6xl text-white group-hover:scale-110 transition-transform duration-300"
+              ></i>
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold text-gray-900 mb-3 font-cinzel group-hover:text-purple-600 transition-colors duration-300"
+              >
+                Frontend Development Libraries
+              </h3>
+              <p class="text-gray-600 mb-4">
+                FreeCodeCamp certification for React.js and modern frontend
+                development libraries and frameworks.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                  >React.js</span
+                >
+                <span
+                  class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm"
+                  >Frontend</span
+                >
+              </div>
+              <a
+                href="Cartificates/Frontend_Development_Libraries.PNG"
+                target="_blank"
+                class="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold group-hover:translate-x-1 transition-transform duration-300"
+              >
+                <i class="fas fa-eye mr-2"></i>
+                View Certificate
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="premium-certificate-card bg-white rounded-3xl shadow-lg overflow-hidden group"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center relative overflow-hidden rounded-t-3xl"
+            >
+              <i
+                class="fas fa-database text-6xl text-white group-hover:scale-110 transition-transform duration-300"
+              ></i>
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold text-gray-900 mb-3 font-cinzel group-hover:text-purple-600 transition-colors duration-300"
+              >
+                SQL Database Management
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Comprehensive SQL certification covering database design,
+                queries, and management systems.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                  >SQL</span
+                >
+                <span
+                  class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm"
+                  >Database</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm"
+                  >MySQL</span
+                >
+              </div>
+              <a
+                href="Cartificates/SQL_certificate.pdf"
+                target="_blank"
+                class="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold group-hover:translate-x-1 transition-transform duration-300"
+              >
+                <i class="fas fa-eye mr-2"></i>
+                View Certificate
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="premium-certificate-card bg-white rounded-3xl shadow-lg overflow-hidden group"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center relative overflow-hidden rounded-t-3xl"
+            >
+              <i
+                class="fas fa-comments text-6xl text-white group-hover:scale-110 transition-transform duration-300"
+              ></i>
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold text-gray-900 mb-3 font-cinzel group-hover:text-purple-600 transition-colors duration-300"
+              >
+                Communication Skills
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Professional communication skills certification for effective
+                team collaboration and client interaction.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                  >Communication</span
+                >
+                <span
+                  class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm"
+                  >Soft Skills</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm"
+                  >Leadership</span
+                >
+              </div>
+              <a
+                href="Cartificates/Communication_skill (1).pdf"
+                target="_blank"
+                class="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold group-hover:translate-x-1 transition-transform duration-300"
+              >
+                <i class="fas fa-eye mr-2"></i>
+                View Certificate
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="premium-certificate-card bg-white rounded-3xl shadow-lg overflow-hidden group"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center relative overflow-hidden rounded-t-3xl"
+            >
+              <i
+                class="fas fa-user-graduate text-6xl text-white group-hover:scale-110 transition-transform duration-300"
+              ></i>
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold text-gray-900 mb-3 font-cinzel group-hover:text-purple-600 transition-colors duration-300"
+              >
+                Academic Excellence
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Recognition for outstanding academic performance and consistent
+                dedication to learning and growth.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                  >Academic</span
+                >
+                <span
+                  class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm"
+                  >Excellence</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm"
+                  >Achievement</span
+                >
+              </div>
+              <a
+                href="Cartificates/Suraj Surve (1).pdf"
+                target="_blank"
+                class="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold group-hover:translate-x-1 transition-transform duration-300"
+              >
+                <i class="fas fa-eye mr-2"></i>
+                View Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate-slide-up">
+          <h2
+            class="section-title text-4xl font-bold text-gray-900 mb-4 font-bungee animate-bounce-in"
+          >
+            Get In Touch
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto animate-pulse-slow"
+          ></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <div class="animate-slide-up">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6 font-cinzel">
+              Send me a message
+            </h3>
+            <form class="space-y-6">
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700 mb-2"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700 mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700 mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="premium-submit-btn w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 relative overflow-hidden group"
+              >
+                <span class="relative z-10">Send Message</span>
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute inset-0 border-2 border-purple-300 rounded-lg group-hover:border-purple-400 transition-colors duration-300"
+                ></div>
+              </button>
+            </form>
+          </div>
+
+          <div class="animate-slide-up">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6 font-cinzel">
+              Connect with me
+            </h3>
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center"
+                >
+                  <i class="fab fa-linkedin text-purple-600 text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 font-cinzel">
+                    LinkedIn
+                  </h4>
+                  <a
+                    href="https://www.linkedin.com/in/suraj-surve-012aa8373/"
+                    class="text-purple-600 hover:text-purple-700"
+                    >linkedin.com/in/suraj-surve
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center"
+                >
+                  <i class="fab fa-github text-gray-600 text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 font-cinzel">
+                    GitHub
+                  </h4>
+                  <a
+                    href="https://github.com/Suraj-7874"
+                    class="text-purple-600 hover:text-purple-700"
+                    >github.com/Suraj-7874</a
+                  >
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-envelope text-red-600 text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 font-cinzel">Email</h4>
+                  <a
+                    href="mailto:Survesuraj38@gmail.com"
+                    class="text-purple-600 hover:text-purple-700"
+                    >Survesuraj38@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-12 p-6 glassmorphism rounded-2xl">
+              <h4 class="text-lg font-semibold text-gray-900 mb-4 font-cinzel">
+                Let's work together!
+              </h4>
+              <p class="text-gray-600">
+                I'm always open to discussing new projects, creative ideas, or
+                opportunities to be part of your visions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="mb-8">
+          <h3 class="text-2xl font-bold font-bungee mb-4 tracking-wide">
+            Suraj
+          </h3>
+          <p class="text-gray-400">Front-end & Web Developer</p>
+        </div>
+
+        <div class="flex justify-center space-x-6 mb-8">
+          <a
+            href="https://www.linkedin.com/in/suraj-surve-012aa8373/"
+            class="text-gray-400 hover:text-blue-500 transition-colors"
+          >
+            <i class="fab fa-linkedin text-xl"></i>
+          </a>
+          <a
+            href="https://github.com/Suraj-7874"
+            class="text-gray-400 hover:text-white transition-colors"
+          >
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          <a
+            href="Survesuraj38@example.com"
+            class="text-gray-400 hover:text-white transition-colors"
+          >
+            <i class="fas fa-envelope text-xl"></i>
+          </a>
+        </div>
+        <hr />
+        <div class="border-t border-gray-800 pt-8">
+          <p class="text-gray-400">&copy; 2025 Suraj. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
